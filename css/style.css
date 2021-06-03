@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "PTSans";
+  src: url(../fonts/PTSans-Bold.woff) format("woff"),
+       url(../fonts/PTSans-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url(../fonts/PTSans.woff) format("woff"),
+       url(../fonts/PTSans.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*colors*/
+
+  :root {
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D2;
+  --basic-light-grey: #EEEEEE;
+  --basic-black: #000000;
+  --basic-light-black: #333333;
+  --basic-white-opacity: rgba(255, 255, 255, 0.9);
+  --basic-brown: #766357;
+  --basic-grey-input: #F2F2F2;
+
+  --special-brown-hover: #604E43;
+  --special-brown-pressing: #503E33;
+  --special-blue-hover: #669EC0;
+  --special-blue-pressing: #5496BD;
+  --special-light-grey-input-hover: #EBEBEB;
+}
+
+/*global*/
+
+.page-body {
+min-width: 1200px;
+margin: 0;
+padding: 0;
+font-family: "PTSans", "Arial", "sans-serif";
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+color:var(--basic-light-black);
+background-color:var(--basic-white);
+text-transform: uppercase;
+}
+
+/*navigation*/
+
+.site-nav {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  list-style: none;
+}
+.site-nav-item {
+  text-decoration: none;
+  color:var(--basic-black);
+  background-color: var(--basic-white);
+}
+.site-nav-item:hover {
+color: var(--special-blue-hover);
+}
+.site-nav-item:focus {
+  opacity: 30%;
+  color:var(--basic-black-);
+}
+
+/*inro*/
+.hide {
+  display: none;
+}
+.wrapper-welcome {
+  width: 1200px;
+  height: 509px;
+  left: 40px;
+  top: 55px;
+  background:
+  url(../img/welcome-text-main.png) no-repeat center 77px,
+  url(../img/togorgeous-main.png) no-repeat center 133px,
+  url(../img/canyon-sucks-text-main.png) no-repeat center 215px,
+  url(../img/background-photo/background-photo-main.jpg) no-repeat center;
+}
+
+/*Описание*/
+
+.description {
+  width: 1200px;
+  height: 216px;
+  text-align: center;
+  vertical-align: middle;
+}
+.description-contents {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.description-p {
+  line-height: 26px;
+}
+
+/*reson*/
+
+.heading-h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color:var(--basic-black)
+}
+.heading-h3-white {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: inherit;
+}
+.reason {
+  background-image: url(../img/background-photo/ground-blye.png);
+  color:var(--basic-white)
+}
+.reason-item {
+  background-color:var(--basic-light-grey);
+}
+
+/*button/map*/
+
+.appointment {
+  background-color:var(--basic-white);
+  color: #000000;
+}
+.appointment-text {
+  background-color: inherit;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  border:none;
+  color: #FFFFFF;
+  background-color: var(--basic-brown);
+}
+
+.button:hover {
+background-color: var(--special-brown-hover);
+}
+.button:focus {
+background-color: rgba(80, 62, 51, 1);
+}
+.appointment-form {
+  font-weight: bold;
+  line-height: 26px;
+}
+.appointment-item-input {
+  font: inherit;
+  font-weight: inherit;
+  background: var(--basic-light-grey) url(../img/icon/calendar-none.svg) no-repeat right;
+  border: none;
+}
+.appointment-item-input:hover {
+  background: var(--special-light-grey-input-hover) url(../img/icon/calendar-hover.svg) no-repeat right;
+  border: none;
+}
+.appointment-item-input:focus {
+  background: var(--basic-white) url(../img/icon/calendar-focus.svg) no-repeat right;
+  outline: 2px solid var(--basic-light-grey);
+}
+.inp_price {
+  background: var(--basic-grey-input);
+  border: none;
+}
+
+/*minus*/
+/*plus*/
+
+.button-search {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  border:none;
+  color: #FFFFFF;
+  background-color:var(--basic-blue);
+}
+.button-search:hover {
+  background-color: var(--special-blue-hover);
+}
+.button-search:focus {
+  background-color: var(--special-blue-pressing);
+}
+
+/*main-footer*/
+
+.main-footer {
+  color:var(--basic-black);
+  background: rgba(255, 255, 255, 0.9);
+}
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color:var(--basic-black);
+  text-decoration: none;
+}
+.footer-social {
+  list-style: none;
+}
+
+.copyright-button {
+  background-color: var(--basic-white);
+}
+.copyright-button:hover {
+  background: var(--basic-white) url(../img/icon/logo_htmlacademy-hover.svg) no-repeat;
+}
+
+/*если эту картинку изначально поместить в background, то что оставить в ссылке?*/
