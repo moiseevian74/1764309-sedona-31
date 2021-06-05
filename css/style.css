@@ -263,7 +263,7 @@
   font-weight: bold;
 }
 
-.filter-ul {
+.filter-list {
   list-style: none;
 }
 
@@ -308,16 +308,16 @@
   text-decoration: underline 1px dashed var(--basic-blue);
 }
 
-.inner-sorting-a:hover {
+.inner-sorting-link:hover {
   color: var(--basic-blue);
 }
 
-.inner-sorting-a:active {
+.inner-sorting-link:active {
   color: var(--basic-blue);
   text-decoration: none;
 }
 
-.inner-sorting-a:focus {
+.inner-sorting-link:focus {
   color: var(--basic-black);
   text-decoration: none;
 }
