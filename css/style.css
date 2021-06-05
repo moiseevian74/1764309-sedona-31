@@ -299,11 +299,11 @@
   line-height: 18px;
 }
 
-.inner-sorting-ul {
+.inner-sorting-list {
   list-style: none;
 }
 
-.inner-sorting-a {
+.inner-sorting-link {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline 1px dashed var(--basic-blue);
 }
@@ -336,7 +336,7 @@
   background-color: var(--basic-white);
 }
 
-.hotel-ul {
+.hotel-list {
   list-style: none;
 }
 
