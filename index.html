@@ -11,20 +11,22 @@
 
 <body class="page-body">
   <!--Шапка-->
-  <header class="maim-header">
+  <header class="main-header">
     <nav class="main-nav">
-      <a class="main-header-logo">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип седона">
-      </a>
-      <ul class="site-nav">
-        <li><a class="site-nav-item" href="blank.html">Информация</a></li>
-        <li><a class="site-nav-item" href="blank.html">Фото и видео</a></li>
-        <li><a class="site-nav-item" href="blank.html">Карта штата</a></li>
-        <li><a class="site-nav-item" href="catalog.html">Гостиницы</a></li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <a class="main-header-logo">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип седона">
+        </a>
+        <ul class="site-nav">
+          <li><a class="site-nav-item" href="blank.html">Информация</a></li>
+          <li><a class="site-nav-item" href="blank.html">Фото и видео</a></li>
+          <li><a class="site-nav-item" href="blank.html">Карта штата</a></li>
+          <li><a class="site-nav-item" href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-
+  <!--main-->
   <main class="wrapper">
     <!--Интро-->
     <section class="wrapper-welcome">
@@ -38,57 +40,65 @@
     </section>
     <!--№1-->
     <section class="reason">
-      <h3 class="heading-h3-white">Настоящий городок</h3>
-      <p>— №1 —</p>
-      <p>Седона — не аттракцион для туристов, там
-        течёт своя жизнь</p>
-      <img src="img/open-range-main.jpg" width="800" height="256" alt="Фотография ресторана">
+      <div class="reason-text">
+        <h3 class="heading-h3-white">Настоящий городок</h3>
+        <p>— №1 —</p>
+        <p>Седона — не аттракцион для туристов, там
+          течёт своя жизнь</p>
+      </div>
+      <img class="reason-photo" src="img/open-range-main.jpg" width="800" height="256" alt="Фотография ресторана">
     </section>
 
-    <section class="advantages">
-      <h3 class="heading-h3">Жильё</h3>
-      <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-      <img src="img/icon/housing-main.svg" width="75" height="72" alt="Иконка изображающая дом">
-    </section>
+    <div class="advantages-wrapper">
+      <section class="advantages">
+        <img src="img/icon/housing-main.svg" width="75" height="72" alt="Иконка изображающая дом">
+        <h3 class="heading-h3">Жильё</h3>
+        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+      </section>
 
-    <section class="advantages">
-      <h3 class="heading-h3">Еда</h3>
-      <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-      <img src="img/icon/food-main.svg" width="75" height="70" alt="Иконка изображающая бургер">
-    </section>
+      <section class="advantages">
+        <img src="img/icon/food-main.svg" width="75" height="70" alt="Иконка изображающая бургер">
+        <h3 class="heading-h3">Еда</h3>
+        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </section>
 
-    <section class="advantages">
-      <h3 class="heading-h3">Сувениры</h3>
-      <p>Не только китайского, но и местного производства!</p>
-      <img src="img/icon/souvenirs-main.svg" width="64" height="77" alt="Иконка изображающая подарок">
-    </section>
+      <section class="advantages">
+        <img src="img/icon/souvenirs-main.svg" width="64" height="77" alt="Иконка изображающая подарок">
+        <h3 class="heading-h3">Сувениры</h3>
+        <p>Не только китайского, но и местного производства!</p>
+      </section>
+    </div>
 
     <!--№2-->
     <section class="reason">
-      <h3 class="heading-h3-white">Там есть мост дьявола</h3>
-      <p>— №2 —</p>
-      <p>Да, по нему можно пройти! Если конечно, вы осмелитесь</p>
+      <div class="reason-block">
+        <h3 class="heading-h3-white">Там есть мост дьявола</h3>
+        <p>— №2 —</p>
+        <p>Да, по нему можно пройти! Если конечно, вы осмелитесь</p>
+      </div>
       <img src="img/canyon-main.jpg" width="800" height="256" alt="Фотография моста дьявола">
     </section>
 
     <!--№3,4,5-->
-    <section class="reason-item">
-      <h3 class="heading-h3">Небольшая площадь</h3>
-      <p>— №3 —</p>
-      <p>Все достопримечательности находятся очень близко</p>
-    </section>
+    <div class="reason-item-wrapper">
+      <section class="reason-item">
+        <h3 class="heading-h3">Небольшая площадь</h3>
+        <p>— №3 —</p>
+        <p>Все достопримечательности находятся очень близко</p>
+      </section>
 
-    <section class="reason-item">
-      <h3 class="heading-h3">Красивая дорога</h3>
-      <p>— №4 —</p>
-      <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-    </section>
+      <section class="reason-item">
+        <h3 class="heading-h3">Красивая дорога</h3>
+        <p>— №4 —</p>
+        <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+      </section>
 
-    <section class="reason-item">
-      <h3 class="heading-h3">Мало туристов</h3>
-      <p>— №5 —</p>
-      <p>Большинство едет в гранд каньон и толпится там</p>
-    </section>
+      <section class="reason-item">
+        <h3 class="heading-h3">Мало туристов</h3>
+        <p>— №5 —</p>
+        <p>Большинство едет в гранд каньон и толпится там</p>
+      </section>
+    </div>
     <!--button/map-->
     <section class="appointment">
       <h2 class="heading-h2">Заинтересовались?</h2>
@@ -115,7 +125,6 @@
           <button class="minus">-</button>
           <input class='inp_price' type="text" value="1" id="children">
           <button class="plus">+</button>
-
         </p>
         <button class="button-search" type="submit">Найти</button>
       </form>
