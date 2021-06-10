@@ -139,6 +139,8 @@
 /*reson*/
 
 .heading-h2 {
+  margin: 0;
+  padding: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -336,12 +338,39 @@
 
 /*inner-page*/
 
-.filter-wrapper {
+.filter {
   background: var(--basic-blue) url(../img/background-photo/background-filter-catalog.jpg) no-repeat;
   color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 300px 300px 600px;
+  height: 217px;
+  justify-content: start;
+}
+
+.filter-block-1 {
+  width: 136px;
+  margin-left: 73px;
+  margin-top: 26px;
+}
+
+.filter-block-2 {
+  width: 136px;
+  margin-left: 26px;
+  margin-top: 26px;
+}
+
+.filter-block-3 {
+  width: 327px;
+  margin-left: 200px;
+  margin-right: 73px;
+  box-sizing: border-box;
+  margin-top: 26px;
 }
 
 .filter-block {
+  /*fieldset*/
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -349,15 +378,21 @@
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
+  border: none;
+  margin-bottom: 24px;
+  padding: 0;
 }
 
 .filter-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-checkbox {
   color: var(--basic-white);
   cursor: pointer;
+  margin-bottom: 25px;
 }
 
 .filter-price-bar {
@@ -366,6 +401,11 @@
   color: var(--basic-white);
   border-radius: 2px;
   outline: none;
+  width: 158px;
+  padding: 0;
+  margin: 0 0 20px auto;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .filter-button {
@@ -377,6 +417,7 @@
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   cursor: pointer;
+  padding: 0;
 }
 
 /*Сортировка*/
@@ -385,10 +426,21 @@
   background-color: var(--basic-white);
   font-size: 12px;
   line-height: 18px;
+  display: grid;
+  grid-template-columns: 200px 1fr 127px;
+  margin-top: 29px;
+  margin-left: 73px;
 }
 
 .inner-sorting-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-sorting-text {
+  padding: 0;
+  margin: 0;
 }
 
 .inner-sorting-link {
@@ -410,6 +462,10 @@
   text-decoration: none;
 }
 
+.arrow-sort-wrapper {
+  justify-self: center;
+}
+
 .inner-sorting-arrow-down {
   text-decoration: none;
 }
@@ -422,10 +478,16 @@
 
 .block-of-hotel {
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 135px 1fr 127px;
+  margin-left: 73px;
+  display: grid;
+  height: 150px;
 }
 
-.hotel-list {
-  list-style: none;
+.block-of-hotel p {
+  padding: 0;
+  margin: 0;
 }
 
 .more-details {
