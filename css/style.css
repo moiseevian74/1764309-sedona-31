@@ -342,33 +342,13 @@
   background: var(--basic-blue) url(../img/background-photo/background-filter-catalog.jpg) no-repeat;
   color: var(--basic-white);
   display: grid;
-  grid-template-columns: 300px 300px 600px;
+  grid-template-columns: 300px 300px 1fr;
   height: 217px;
   justify-content: start;
 }
 
-.filter-block-1 {
-  width: 136px;
-  margin-left: 73px;
-  margin-top: 26px;
-}
-
-.filter-block-2 {
-  width: 136px;
-  margin-left: 26px;
-  margin-top: 26px;
-}
-
-.filter-block-3 {
-  width: 327px;
-  margin-left: 200px;
-  margin-right: 73px;
-  box-sizing: border-box;
-  margin-top: 26px;
-}
-
-.filter-block {
-  /*fieldset*/
+/*fieldset*/
+.filter-block fieldset {
   margin: 0;
   padding: 0;
   border: none;
@@ -481,7 +461,6 @@
   display: grid;
   grid-template-columns: 135px 1fr 127px;
   margin-left: 73px;
-  display: grid;
   height: 150px;
 }
 
