@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-/*colors*/
+/*Colors*/
 
 :root {
   --basic-white: #FFFFFF;
@@ -31,13 +31,14 @@
   --special-light-grey-focus: #BDBBBC;
 }
 
-/*global*/
+/*Global*/
 
 .page {
   height: 100%;
 }
 
 .page-body {
+  position: relative;
   min-width: 1200px;
   margin: 0;
   padding: 0;
@@ -54,6 +55,8 @@
   grid-template-rows: min-content 1fr min-content;
 }
 
+/*Header-container*/
+
 .main-header-container {
   display: flex;
   flex-direction: row;
@@ -64,12 +67,18 @@
   justify-content: center;
 }
 
+/*Navigation*/
+
 .site-nav li:nth-child(2) {
-  margin-right: 133px;
+  margin-right: 153px;
 }
 
 .site-nav li:nth-child(1), .site-nav li:nth-child(2) {
   text-align: left;
+}
+
+.site-nav li:nth-child(3) {
+  margin-left: 10px;
 }
 
 .site-nav li:nth-child(3), .site-nav li:nth-child(4) {
@@ -119,7 +128,7 @@
   color: var(--basic-brown);
 }
 
-/*main-wrapper*/
+/*Main-wrapper*/
 
 .wrapper {
   width: 1200px;
@@ -127,7 +136,8 @@
   padding: 0;
 }
 
-/*inro*/
+/*Inro-wrapper,
+Hide-elements*/
 
 .hide {
   position: absolute;
@@ -148,10 +158,11 @@
   display: grid;
 }
 
-/*Описание*/
+/*Description*/
 
 .description {
   display: grid;
+  grid-template-rows: 138px 1fr;
   height: 216px;
   text-align: center;
 }
@@ -160,20 +171,23 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin: 42px 0 0;
+  margin: 42px auto 0;
+  padding: 0px;
+  width: 470px;
 }
 
 .description-p {
   margin: 0;
+  padding: 0px;
   line-height: 26px;
 }
 
-/*reson*/
+/*Heading*/
 
 .heading-h2 {
-  margin: 58px 0 38px;
+  margin: 57px auto 30px 446px;
   padding: 0;
-  font-size: 21px;
+  font-size: 30px;
   line-height: 26px;
   font-weight: bold;
   color: var(--basic-black)
@@ -184,16 +198,23 @@
   line-height: 21px;
   font-weight: bold;
   color: var(--basic-black);
-  margin: 28px auto 25px;
+  margin: 23px auto 25px;
 }
 
 .heading-h3-white {
   font-size: 21px;
   line-height: 21px;
+  width: 150px;
   font-weight: bold;
   color: inherit;
   margin: 0 auto 25px;
 }
+
+.first-head {
+  width: 122px;
+}
+
+/*Resons*/
 
 .reason {
   background-image: url(../img/background-photo/ground-blye.png);
@@ -203,8 +224,16 @@
   text-align: center;
 }
 
+.reason-content-p {
+  width: 304px;
+}
+
 .reason-reverse {
   grid-template-columns: 1fr 400px;
+}
+
+.reason-reverse-p {
+  width: 304px;
 }
 
 .reason-container-a {
@@ -222,24 +251,6 @@
   padding: 0;
 }
 
-.reason-item {
-  background-color: var(--basic-light-grey);
-  padding-top: 19px;
-}
-
-.advantages-wrapper {
-  display: grid;
-  height: 330px;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  padding-top: 60px;
-  box-sizing: border-box;
-}
-
-.advantages-wrapper p {
-  margin: 0 auto 25px;
-}
-
 .reason-item-wrapper {
   display: grid;
   height: 256px;
@@ -251,9 +262,77 @@
   margin: 0 auto 25px;
 }
 
-/*button/map*/
+.reason-item {
+  background-color: var(--basic-light-grey);
+  padding-top: 24px;
+}
+
+.reason-item-p-column-1 {
+  width: 207px;
+}
+
+.reason-item-p-column-2 {
+  width: 258px;
+}
+
+.reason-item-p-column-3 {
+  width: 246px;
+}
+
+/*Heading h3 in reason-item - width*/
+
+.column-1 {
+  width: 119px;
+}
+
+.column-2 {
+  width: 99px;
+}
+
+.column-3 {
+  width: 98px;
+}
+
+/*Advantages*/
+
+.advantages-wrapper {
+  display: grid;
+  height: 330px;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.advantages {
+  padding-top: 60px;
+}
+
+.advantages.suvenir {
+  padding-top: 55px;
+}
+
+.advantages-content-column-1 {
+  width: 254px;
+}
+
+.advantages-content-column-2 {
+  width: 297px;
+  ;
+}
+
+.advantages-content-column-3 {
+  width: 269px;
+  ;
+}
+
+.advantages-wrapper p {
+  margin: 0 auto 25px;
+}
+
+/*Form*/
 
 .appointment {
+  position: relative;
   background-color: var(--basic-white);
   color: #000000;
   display: grid;
@@ -261,12 +340,15 @@
 }
 
 .appointment-form {
+  position: absolute;
   z-index: 1;
   width: 568px;
-  top: 279px;
+  top: 292px;
   left: 316px;
   padding-top: 55px;
   padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 55px;
   font: inherit;
   font-size: 14px;
   font-weight: bold;
@@ -281,7 +363,8 @@
   background-color: inherit;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 auto 47px;
+  margin: 0 auto 45px;
+  width: 435px;
 }
 
 .appointment-form p {
@@ -289,8 +372,17 @@
   padding: 0;
 }
 
+/*Button*/
+
 .button {
+  font-family: PTSans;
+  font-style: normal;
+  font-weight: bold;
   justify-self: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 568px;
   height: 86px;
   font-size: 21px;
@@ -310,32 +402,87 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.appointment-form {
-  font-weight: bold;
+.button-search {
+  font-size: 21px;
   line-height: 26px;
+  width: 458px;
+  height: 58px;
+  padding: 0;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+  background-color: var(--basic-blue);
+}
+
+.button-search:hover {
+  background-color: var(--special-blue-hover);
+}
+
+.button-search:focus {
+  background-color: var(--special-blue-pressing);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*Input*/
+
+.input-calendar {
+  position: absolute;
+  top: 58px;
+  right: 60px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.input-calendar-2 {
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.input-calendar:hover path {
+  fill: var(--basic-black);
+}
+
+.input-calendar-2:hover path {
+  fill: var(--basic-black);
+}
+
+.input-calendar:focus path {
+  fill: var(--basic-blue);
+}
+
+.input-calendar-2:focus path {
+  fill: var(--basic-blue);
 }
 
 .appointment-item-input {
+  position: relative;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 12px;
-  padding-right: 30px;
+  padding-right: 35px;
   margin-bottom: 29px;
   width: 346px;
   font: inherit;
   font-weight: inherit;
-  background: var(--basic-light-grey) url(../img/icon/calendar-none.svg) no-repeat 317px;
+  background: var(--basic-light-grey) no-repeat;
   border: none;
   box-sizing: border-box;
 }
 
 .appointment-item-input:hover {
-  background: var(--special-light-grey-input-hover) url(../img/icon/calendar-hover.svg) no-repeat 317px;
+  background: var(--special-light-grey-input-hover) no-repeat;
   border: none;
 }
 
 .appointment-item-input:focus {
-  background: var(--basic-white) url(../img/icon/calendar-focus.svg) no-repeat 317px;
+  background: var(--basic-white) no-repeat;
   outline: 2px solid var(--basic-light-grey);
 }
 
@@ -343,6 +490,7 @@
   width: 65px;
   background: var(--basic-grey-input);
   border: none;
+  text-align: center;
 }
 
 .appointment-form label {
@@ -359,42 +507,31 @@
 }
 
 input~label[for="children"] {
-  margin-left: 50px;
+  margin-left: 60px;
+  margin-right: 28px;
   width: 60px;
 }
 
-/*minus*/
-
-/*plus*/
-
-.button-search {
-  font-size: 21px;
-  line-height: 26px;
-  width: 458px;
-  height: 58px;
-  margin-bottom: 55px;
-  text-transform: uppercase;
-  border: none;
-  color: #FFFFFF;
-  background-color: var(--basic-blue);
+.minus {
+  width: 16px;
+  padding: 2px;
 }
 
-.button-search:hover {
-  background-color: var(--special-blue-hover);
-}
-
-.button-search:focus {
-  background-color: var(--special-blue-pressing);
-  color: rgba(255, 255, 255, 0.3);
+.plus {
+  width: 16px;
+  padding: 2px;
 }
 
 /*main-footer*/
 
 .main-footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
   z-index: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
   color: var(--basic-black);
   background: rgba(255, 255, 255, 0.9);
   width: 1200px;
@@ -422,11 +559,20 @@ input~label[for="children"] {
   font-weight: bold;
   color: var(--basic-black);
   text-decoration: none;
+  text-align: center;
 }
 
 .contacts-hashtag {
-  padding-top: 23px;
+  padding-top: 22px;
   padding-bottom: 9px;
+  padding-left: 153px;
+  padding-right: 81px;
+}
+
+.contacts-number {
+  margin-top: -3px;
+  padding-left: 136px;
+  padding-right: 64px;
 }
 
 .footer-social-button-grid {
@@ -442,12 +588,9 @@ input~label[for="children"] {
 }
 
 .footer-copyright {
-  justify-self: center;
+  padding-right: 131px;
+  justify-self: right;
   align-self: center;
-}
-
-.copyright-button {
-  background-color: var(--basic-white);
 }
 
 .copyright-button:hover path {

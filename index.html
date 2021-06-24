@@ -41,9 +41,9 @@
     <!--№1-->
     <section class="reason">
       <div class="reason-container-a">
-        <h3 class="heading-h3-white">Настоящий городок</h3>
+        <h3 class="heading-h3-white first-head">Настоящий городок</h3>
         <p>— №1 —</p>
-        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <p class="reason-content-p">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
       <img class="reason-photo-a" src="img/open-range-main.jpg" width="800" height="256" alt="Фотография ресторана">
     </section>
@@ -52,19 +52,19 @@
       <section class="advantages">
         <img src="img/icon/housing-main.svg" width="75" height="72" alt="Иконка изображающая дом">
         <h3 class="heading-h3">Жильё</h3>
-        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <p class="advantages-content-column-1">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </section>
 
       <section class="advantages">
         <img src="img/icon/food-main.svg" width="75" height="70" alt="Иконка изображающая бургер">
         <h3 class="heading-h3">Еда</h3>
-        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        <p class="advantages-content-column-2">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </section>
 
-      <section class="advantages">
+      <section class="advantages suvenir">
         <img src="img/icon/souvenirs-main.svg" width="64" height="77" alt="Иконка изображающая подарок">
         <h3 class="heading-h3">Сувениры</h3>
-        <p>Не только китайского, но и местного производства!</p>
+        <p class="advantages-content-column-3">Не только китайского, но и местного производства!</p>
       </section>
     </div>
 
@@ -74,53 +74,74 @@
       <div class="reason-container">
         <h3 class="heading-h3-white">Там есть мост дьявола</h3>
         <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если конечно, вы осмелитесь</p>
+        <p class="reason-reverse-p">Да, по нему можно пройти! Если конечно, вы осмелитесь</p>
       </div>
     </section>
 
     <!--№3,4,5-->
     <div class="reason-item-wrapper">
       <section class="reason-item">
-        <h3 class="heading-h3">Небольшая площадь</h3>
+        <h3 class="heading-h3 column-1">Небольшая площадь</h3>
         <p>— №3 —</p>
-        <p>Все достопримечательности находятся очень близко</p>
+        <p class="reason-item-p-column-1">Все достопримечательности находятся очень близко</p>
       </section>
 
       <section class="reason-item">
-        <h3 class="heading-h3">Красивая дорога</h3>
+        <h3 class="heading-h3 column-2">Красивая дорога</h3>
         <p>— №4 —</p>
-        <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+        <p class="reason-item-p-column-2">Ехать в седону из лас-вегаса совсем не скучно!</p>
       </section>
 
       <section class="reason-item">
-        <h3 class="heading-h3">Мало туристов</h3>
+        <h3 class="heading-h3 column-3">Мало туристов</h3>
         <p>— №5 —</p>
-        <p>Большинство едет в гранд каньон и толпится там</p>
+        <p class="reason-item-p-column-3">Большинство едет в гранд каньон и толпится там</p>
       </section>
     </div>
     <!--button/map-->
     <section class="appointment">
       <h2 class="heading-h2">Заинтересовались?</h2>
-      <p class="appointment-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p class="appointment-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
+        в
         седоне</p>
       <button class="button">Поиск гостиницы в седоне</button>
       <form class="appointment-form" method="GET" action="https://echo.htmlacademy.ru/">
         <p class="appointment-item">
           <label for="arrival-date">Дата заезда:</label>
           <input class="appointment-item-input" type="text" name="date" placeholder="24.04.2017" id="arrival-date">
+          <button class="input-calendar">
+            <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
+                fill="#A9A9A9" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.59399 9.22498H7.21899V11.291H4.59399V9.22498ZM4.59399 12.668H7.21899V14.735H4.59399V12.668ZM7.21899 16.112H4.59399V18.178H7.21899V16.112ZM9.18799 16.112H11.813V18.178H9.18799V16.112ZM11.813 12.668H9.18799V14.735H11.813V12.668ZM9.18799 9.22498H11.813V11.291H9.18799V9.22498ZM16.406 16.112H13.781V18.178H16.406V16.112ZM13.781 12.668H16.406V14.735H13.781V12.668ZM16.406 9.22498H13.781V11.291H16.406V9.22498Z"
+                fill="#A9A9A9" />
+            </svg>
+          </button>
         </p>
         <p class="appointment-item">
           <label for="date-of-departure">Дата Выезда:</label>
           <input class="appointment-item-input" type="text" name="date" placeholder="4.06.2017" id="date-of-departure">
+          <button class="input-calendar-2">
+            <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
+                fill="#A9A9A9" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.59399 9.22498H7.21899V11.291H4.59399V9.22498ZM4.59399 12.668H7.21899V14.735H4.59399V12.668ZM7.21899 16.112H4.59399V18.178H7.21899V16.112ZM9.18799 16.112H11.813V18.178H9.18799V16.112ZM11.813 12.668H9.18799V14.735H11.813V12.668ZM9.18799 9.22498H11.813V11.291H9.18799V9.22498ZM16.406 16.112H13.781V18.178H16.406V16.112ZM13.781 12.668H16.406V14.735H13.781V12.668ZM16.406 9.22498H13.781V11.291H16.406V9.22498Z"
+                fill="#A9A9A9" />
+            </svg>
+          </button>
         </p>
         <div class="count-box-wrapper">
           <label for="adults">Взрослые:</label>
           <button class="minus">-</button>
-          <input class='inp_price' type="text" value="1" id="adults">
+          <input class='inp_price' type="text" value="2" id="adults">
           <button class="plus">+</button>
           <label for="children">Дети:</label>
           <button class="minus">-</button>
-          <input class='inp_price' type="text" value="1" id="children">
+          <input class='inp_price' type="text" value="0" id="children">
           <button class="plus">+</button>
         </div>
         <button class="button-search" type="submit">Найти</button>
@@ -133,7 +154,7 @@
   <footer class="main-footer">
     <section class="footer-contacts-grid">
       <a class="footer-contacts contacts-hashtag" href="#">#visitsedona</a>
-      <a class="footer-contacts contacts number" href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class="footer-contacts contacts-number" href="tel:+78005558628">+7 800 555-86-28</a>
     </section>
     <section class="footer-social-button-grid">
       <a class="social-button" href="#">
