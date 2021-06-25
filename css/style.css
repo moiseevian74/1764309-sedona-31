@@ -23,6 +23,7 @@
   --basic-white-opacity: rgba(255, 255, 255, 0.9);
   --basic-brown: #766357;
   --basic-grey-input: #F2F2F2;
+  --basic-grey-plus-minus: #A9A9A9;
   --special-brown-hover: #604E43;
   --special-brown-pressing: #503E33;
   --special-blue-hover: #669EC0;
@@ -427,18 +428,8 @@ Hide-elements*/
 
 .input-calendar {
   position: absolute;
-  top: 58px;
-  right: 60px;
-  border: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-}
-
-.input-calendar-2 {
-  position: absolute;
-  top: 120px;
-  right: 60px;
+  top: 3px;
+  right: 3px;
   border: none;
   background: none;
   box-shadow: none;
@@ -461,8 +452,11 @@ Hide-elements*/
   fill: var(--basic-blue);
 }
 
-.appointment-item-input {
+.appointment-item {
   position: relative;
+}
+
+.appointment-item-input {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 12px;
@@ -486,17 +480,17 @@ Hide-elements*/
   outline: 2px solid var(--basic-light-grey);
 }
 
-.inp_price {
-  width: 65px;
-  background: var(--basic-grey-input);
-  border: none;
-  text-align: center;
-}
-
 .appointment-form label {
   display: inline-block;
   margin: 6px 15px 6px 0;
   width: 92px;
+}
+
+.inp_price {
+  width: 45px;
+  background: var(--basic-grey-input);
+  border: none;
+  text-align: center;
 }
 
 .count-box-wrapper {
@@ -507,19 +501,47 @@ Hide-elements*/
 }
 
 input~label[for="children"] {
-  margin-left: 60px;
-  margin-right: 28px;
+  margin-left: 50px;
+  margin-right: 20px;
   width: 60px;
 }
 
 .minus {
-  width: 16px;
+  border: none;
+  text-align: center;
+  width: 30px;
   padding: 2px;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--basic-grey-plus-minus);
+  cursor: pointer;
 }
 
 .plus {
-  width: 16px;
+  border: none;
+  text-align: center;
+  width: 30px;
   padding: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--basic-grey-plus-minus);
+  cursor: pointer;
+}
+
+.minus:hover {
+  color: var(--basic-black);
+}
+
+.plus:hover {
+  color: var(--basic-black);
+}
+
+.minus:focus {
+  color: var(--special-blue-pressing);
+}
+
+.plus:focus {
+  color: var(--special-blue-pressing);
 }
 
 /*main-footer*/
@@ -613,7 +635,7 @@ input~label[for="children"] {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-/*inner-page*/
+/*Inner-page*/
 
 .filter {
   background: var(--basic-blue) url(../img/background-photo/background-filter-catalog.jpg) no-repeat;
@@ -624,7 +646,7 @@ input~label[for="children"] {
   justify-content: start;
 }
 
-/*fieldset*/
+/*Fieldset-filter*/
 
 .filter-block fieldset {
   margin: 0;
@@ -678,7 +700,7 @@ input~label[for="children"] {
   padding: 0;
 }
 
-/*Сортировка*/
+/*Sort*/
 
 .inner-sorting {
   background-color: var(--basic-white);
@@ -732,7 +754,7 @@ input~label[for="children"] {
   text-decoration: none;
 }
 
-/*hotel list*/
+/*Hotel list*/
 
 .block-of-hotel {
   background-color: var(--basic-white);
