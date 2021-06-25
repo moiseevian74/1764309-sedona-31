@@ -468,6 +468,7 @@ Hide-elements*/
   background: var(--basic-light-grey) no-repeat;
   border: none;
   box-sizing: border-box;
+  color: var(--basic-black);
 }
 
 .appointment-item-input:hover {
@@ -478,6 +479,11 @@ Hide-elements*/
 .appointment-item-input:focus {
   background: var(--basic-white) no-repeat;
   outline: 2px solid var(--basic-light-grey);
+}
+
+.appointment-item-input::placeholder {
+  font-weight: bold;
+  color: var(--basic-black);
 }
 
 .appointment-form label {
@@ -491,6 +497,18 @@ Hide-elements*/
   background: var(--basic-grey-input);
   border: none;
   text-align: center;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.inp_price:hover {
+  background: var(--special-light-grey-input-hover) no-repeat;
+  border: none;
+}
+
+.inp_price:focus {
+  background: var(--basic-white) no-repeat;
+  outline: 2px solid var(--basic-light-grey);
 }
 
 .count-box-wrapper {
