@@ -774,6 +774,9 @@ input~label[for="children"] {
 }
 
 .filter-price-bar {
+  font-family: PTSans;
+  font-style: normal;
+  justify-self: center;
   background: none;
   border: 2px solid var(--basic-white);
   color: var(--basic-white);
