@@ -1030,6 +1030,7 @@ input~label[for="children"] {
   grid-template-columns: 237px 1fr 200px;
   border-bottom: 1px solid #E5E5E5;
   flex-wrap: wrap;
+  height: auto;
 }
 
 .block-of-hotel p {
