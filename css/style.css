@@ -61,6 +61,7 @@
   min-height: 100%;
   display: grid;
   align-content: start;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
 }
 
@@ -80,7 +81,7 @@
 /*Navigation*/
 
 .site-nav li:nth-child(4n+2) {
-  margin-right: 163px;
+  margin-right: 160px;
 }
 
 .site-nav li:nth-child(4n+1), .site-nav li:nth-child(4n+2) {
@@ -154,6 +155,7 @@ Hide-elements*/
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -201,10 +203,10 @@ Hide-elements*/
 /*Heading*/
 
 .heading-h2-main {
-  margin: 57px auto 30px 446px;
+  margin: 57px auto 33px 446px;
   padding: 0;
   font-size: 30px;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: bold;
   color: var(--basic-black);
 }
@@ -223,7 +225,7 @@ Hide-elements*/
   line-height: 21px;
   font-weight: bold;
   color: var(--basic-black);
-  margin: 20px auto 25px;
+  margin: 22px auto 25px;
 }
 
 .heading-h3-white {
@@ -262,8 +264,10 @@ Hide-elements*/
   grid-template-columns: 1fr 400px;
 }
 
-.reason-reverse-p {
+.reason-container .reason-reverse-p {
   width: 304px;
+  margin: 0 50px 23px;
+  padding: 0;
 }
 
 .reason-container-a {
@@ -277,7 +281,7 @@ Hide-elements*/
 }
 
 .reason p {
-  margin: 0 auto 25px;
+  margin: 0 49px 23px;
   padding: 0;
 }
 
@@ -294,7 +298,7 @@ Hide-elements*/
 
 .reason-item {
   background-color: var(--basic-light-grey);
-  padding-top: 27px;
+  padding-top: 25px;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 10px;
@@ -343,7 +347,6 @@ Hide-elements*/
   padding-right: 5px;
   padding-bottom: 10px;
   box-sizing: border-box;
-  max-width: 330px;
   overflow: hidden;
 }
 
@@ -401,7 +404,7 @@ Hide-elements*/
   background-color: inherit;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 auto 45px;
+  margin: 0 auto 43px;
   width: 435px;
 }
 
@@ -494,14 +497,15 @@ Hide-elements*/
 }
 
 .appointment-item-input {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 14px;
   padding-right: 35px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   width: 346px;
   font: inherit;
   font-weight: inherit;
+  text-transform: uppercase;
   background: var(--basic-light-grey) no-repeat;
   border: none;
   box-sizing: border-box;
@@ -518,6 +522,16 @@ Hide-elements*/
   outline: 2px solid var(--basic-light-grey);
 }
 
+.appointment-item-input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.appointment-item-input::-moz-placeholder {
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
 .appointment-item-input::placeholder {
   font-weight: bold;
   color: var(--basic-black);
@@ -526,7 +540,7 @@ Hide-elements*/
 .appointment-form label {
   display: inline-block;
   vertical-align: middle;
-  margin: 6px 15px 6px 0;
+  margin: 6px 15px 10px 0;
   width: 92px;
 }
 
@@ -535,6 +549,8 @@ Hide-elements*/
   background: var(--basic-grey-input);
   border: none;
   text-align: center;
+  font-size: 14px;
+  line-height: 26px;
   font-weight: bold;
   color: var(--basic-black);
 }
@@ -552,13 +568,17 @@ Hide-elements*/
 .count-box-wrapper {
   display: flex;
   margin: 0 0 54px;
-  width: 568px;
+  width: 458px;
   box-sizing: border-box;
 }
 
-input~label[for="children"] {
-  margin-left: 50px;
-  margin-right: 20px;
+label[for="adults"] {
+  margin-right: 18px;
+}
+
+label[for="children"] {
+  margin-left: 63px;
+  margin-right: 9px;
   width: 60px;
 }
 
@@ -764,6 +784,8 @@ input~label[for="children"] {
   position: relative;
   cursor: pointer;
   padding-left: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
 }
 
@@ -775,6 +797,7 @@ input~label[for="children"] {
   color: var(--basic-white);
   cursor: pointer;
   margin-bottom: 25px;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -953,6 +976,7 @@ input~label[for="children"] {
 
 .inner-sorting-link {
   color: rgba(0, 0, 0, 0.3);
+  -webkit-text-decoration: underline 1px dashed var(--basic-blue);
   text-decoration: underline 1px dashed var(--basic-blue);
 }
 
@@ -1021,6 +1045,7 @@ input~label[for="children"] {
 .photo-hotel {
   width: 135px;
   height: 90px;
+  -o-object-fit: contain;
   object-fit: contain;
   background-color: var(--basic-white);
 }
@@ -1187,6 +1212,8 @@ input~label[for="children"] {
   font-size: 21px;
   line-height: 30px;
   transform: translate(-50%, -50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
 }
 
