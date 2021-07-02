@@ -790,14 +790,14 @@ label[for="children"] {
 .filter-list label {
   position: relative;
   cursor: pointer;
-  padding-left: 19px;
+  padding-left: 26px;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
 
 .filter-list li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .filter-checkbox {
@@ -813,7 +813,7 @@ label[for="children"] {
 .filter-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -22px;
+  left: -15px;
   width: 20px;
   height: 20px;
   border: 2px solid var(--basic-white);
@@ -824,7 +824,7 @@ label[for="children"] {
   content: "";
   position: absolute;
   top: 0px;
-  left: -17px;
+  left: -10px;
   width: 22px;
   height: 17px;
   background-image: url(../img/icon/checked.svg);
@@ -852,7 +852,7 @@ label[for="children"] {
   color: var(--basic-white);
   border-radius: 2px;
   outline: none;
-  width: 160px;
+  width: 161px;
   height: 36px;
   padding: 0;
   margin: 0 -6px 55px auto;
@@ -925,7 +925,7 @@ label[for="children"] {
 
 .filter-button {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 21px;
   width: 137px;
   height: 36px;
@@ -1037,7 +1037,7 @@ label[for="children"] {
 .block-of-hotel-wrapper h3 {
   margin: 0px;
   padding-top: 25px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
 }
 
 /*Column 1,2,3*/
@@ -1154,19 +1154,18 @@ label[for="children"] {
 
 .column-rating-hotel {
   display: grid;
-  width: 125px;
+  width: 170px;
   justify-content: right;
-  margin-left: 20px;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 62px 1fr;
   align-items: center;
 }
 
 .column-rating-hotel p.stars {
   width: 100px;
   padding-top: 22px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 20px;
+  padding-right: 8px;
+  padding-bottom: 3px;
+  padding-left: 44px;
   transform: scale(-1, 1);
 }
 
@@ -1176,6 +1175,7 @@ label[for="children"] {
   align-items: center;
   text-align: center;
   padding-top: 4px;
+  padding-right: 0px;
   box-sizing: border-box;
   background-color: var(--basic-grey-input);
 }
@@ -1183,8 +1183,8 @@ label[for="children"] {
 /*Footer for inner page*/
 
 .inner-page-footer {
-  position: static;
-  transform: none;
+  position: relative;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 /*-----------------------------Blank-page-----------------------------*/
@@ -1229,11 +1229,4 @@ label[for="children"] {
   transition: 1s ease-out;
   transition-delay: 0.2s;
   box-shadow: 0px 0px 12px 10px rgb(0 1 1 / 10%);
-}
-
-.blank-page-footer {
-  width: 1200px;
-  margin: 0 auto;
-  background-color: var(--basic-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
