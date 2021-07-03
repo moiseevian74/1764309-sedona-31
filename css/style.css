@@ -672,16 +672,15 @@ label[for="children"] {
 }
 
 .contacts-hashtag {
-  padding-top: 22px;
-  padding-bottom: 9px;
-  padding-left: 153px;
-  padding-right: 81px;
+  width: 166px;
+  margin: 22px 81px 9px 152px;
+  box-sizing: border-box;
 }
 
 .contacts-number {
-  margin-top: -3px;
-  padding-left: 136px;
-  padding-right: 64px;
+  width: 200px;
+  margin: -4px 63px 36px 136px;
+  box-sizing: border-box;
 }
 
 .footer-social-button-grid {
