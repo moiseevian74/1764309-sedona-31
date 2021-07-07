@@ -30,6 +30,7 @@
   --special-blue-pressing: #5496BD;
   --special-light-grey-input-hover: #EBEBEB;
   --special-light-grey-focus: #BDBBBC;
+  --special-dark-grey-chekbox-disabled: #6A6A6A;
 }
 
 /*Global*/
@@ -631,6 +632,11 @@ label[for="children"] {
   color: var(--special-blue-pressing);
 }
 
+.filter-checkbox:disabled {
+  color: var(--special-dark-grey-chekbox-disabled);
+  background-color: var(--special-dark-grey-chekbox-disabled);
+}
+
 /*Main-footer*/
 
 .main-footer {
@@ -832,6 +838,10 @@ label[for="children"] {
   height: 17px;
   background-image: url(../img/icon/checked.svg);
   background-repeat: no-repeat;
+}
+
+.filter-checkbox:focus+label::before {
+  outline: 2px solid var(--special-light-grey-focus);
 }
 
 .fieldset-filter-block {
