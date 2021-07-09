@@ -378,18 +378,21 @@ Hide-elements*/
 /*Form*/
 
 .appointment {
-  position: relative;
   background-color: var(--basic-white);
   color: #000000;
   display: grid;
   text-align: center;
+  overflow: hidden;
+}
+
+.show-or-hide-form {
+  position: relative;
+  overflow: hidden;
 }
 
 .appointment-form {
   position: absolute;
-  z-index: 1;
   width: 568px;
-  top: 292px;
   left: 316px;
   padding-top: 55px;
   padding-left: 55px;
@@ -404,6 +407,91 @@ Hide-elements*/
   box-sizing: border-box;
   justify-self: center;
   align-self: center;
+  transform: translateY(-100%);
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.popup {
+  transform: translateY(0);
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(1px);
+  }
+  10% {
+    transform: translate(-1px);
+  }
+  20% {
+    transform: translate(-5px);
+  }
+  30% {
+    transform: translate(5px);
+  }
+  40% {
+    transform: translate(10px);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  60% {
+    transform: translate(-5px);
+  }
+  70% {
+    transform: translate(5px);
+  }
+  80% {
+    transform: translate(-1px);
+  }
+  90% {
+    transform: translate(1px);
+  }
+  100% {
+    transform: translate(1px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px);
+  }
+  10% {
+    transform: translate(-1px);
+  }
+  20% {
+    transform: translate(-5px);
+  }
+  30% {
+    transform: translate(5px);
+  }
+  40% {
+    transform: translate(10px);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  60% {
+    transform: translate(-5px);
+  }
+  70% {
+    transform: translate(5px);
+  }
+  80% {
+    transform: translate(-1px);
+  }
+  90% {
+    transform: translate(1px);
+  }
+  100% {
+    transform: translate(1px);
+  }
+}
+
+.shake {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
 }
 
 .appointment-text {
@@ -632,9 +720,14 @@ label[for="children"] {
   color: var(--special-blue-pressing);
 }
 
-.filter-checkbox:disabled {
+.filter-checkbox:disabled+label {
   color: var(--special-dark-grey-chekbox-disabled);
-  background-color: var(--special-dark-grey-chekbox-disabled);
+}
+
+.map-of-sedona {
+  width: 1200px;
+  height: 594px;
+  background-image: url(../img/map-sedona.png);
 }
 
 /*Main-footer*/
