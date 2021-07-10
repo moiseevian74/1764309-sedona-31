@@ -11,7 +11,6 @@ const btMinus = document.querySelector(".bt-minus");
 const second = document.querySelector(".inp-second");
 
 searchSedona.addEventListener("click", function (evt) {
-  console.log("ass");
   formShow.classList.toggle("popup");
   arrival.focus();
 });
