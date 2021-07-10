@@ -638,7 +638,7 @@ Hide-elements*/
   width: 92px;
 }
 
-.inp_price {
+.inp-price {
   width: 45px;
   background: var(--basic-grey-input);
   border: none;
@@ -653,12 +653,12 @@ Hide-elements*/
   padding-bottom: 4px;
 }
 
-.inp_price:hover {
+.inp-price:hover {
   background: var(--special-light-grey-input-hover) no-repeat;
   border: none;
 }
 
-.inp_price:focus {
+.inp-price:focus {
   background: var(--basic-white) no-repeat;
   outline: 2px solid var(--basic-light-grey);
 }

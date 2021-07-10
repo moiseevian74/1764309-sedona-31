@@ -1,14 +1,14 @@
-let searchSedona = document.querySelector(".searchsedona");
-let formShow = document.querySelector(".appointment-form");
-let arrival = document.getElementById("arrival-date");
-let departure = document.getElementById("date-of-departure");
-let form = document.querySelector(".appointment-form");
-let plus = document.querySelector(".plus");
-let minus = document.querySelector(".minus");
-let first = document.querySelector(".inp_first");
-let btPlus = document.querySelector(".bt_plus");
-let btMinus = document.querySelector(".bt_minus");
-let second = document.querySelector(".inp_second");
+const searchSedona = document.querySelector(".searchsedona");
+const formShow = document.querySelector(".appointment-form");
+const arrival = document.getElementById("arrival-date");
+const departure = document.getElementById("date-of-departure");
+const form = document.querySelector(".appointment-form");
+const plus = document.querySelector(".plus");
+const minus = document.querySelector(".minus");
+const first = document.querySelector(".inp-first");
+const btPlus = document.querySelector(".bt-plus");
+const btMinus = document.querySelector(".bt-minus");
+const second = document.querySelector(".inp-second");
 
 searchSedona.addEventListener("click", function (evt) {
   console.log("ass");
