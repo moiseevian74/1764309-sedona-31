@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico" type="image/svg+xml">
 </head>
@@ -19,7 +19,7 @@
       <header class="main-header">
         <nav class="main-nav">
           <a class="main-header-logo">
-            <img src="img/logo.png" width="138" height="70"
+            <img src="img/logo.svg" width="138" height="70"
               alt="Приветственный текст: Welcome to the gorgeous. Sedona. Because the grand canyon sucks!">
           </a>
           <ul class="site-nav">
@@ -119,6 +119,7 @@
               <input class="appointment-item-input" type="text" name="date" placeholder="24 апреля 2017"
                 id="arrival-date" autocomplete="off">
               <button class="input-calendar" type="button" name="date">
+                <span class="hide">Открыть календарь для выбора даты</span>
                 <svg aria-hidden="true" width="21" height="23" viewBox="0 0 21 23" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -131,10 +132,11 @@
               </button>
             </p>
             <p class="appointment-item">
-              <label for="date-of-departure">Дата Выезда:</label>
+              <label for="date-of-departure">Дата выезда:</label>
               <input class="appointment-item-input" type="text" name="date" placeholder="4 июля 2017"
                 id="date-of-departure" autocomplete="off">
               <button class="input-calendar" type="button" name="date">
+                <span class="hide">Открыть календарь для выбора даты</span>
                 <svg aria-hidden="true" width="21" height="23" viewBox="0 0 21 23" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -148,13 +150,17 @@
             </p>
             <div class="count-box-wrapper">
               <label for="adults">Взрослые:</label>
-              <button class="minus" type="button">&#x02013;</button>
+              <button class="minus" type="button">&#x02013;<span class="hide">Уменьшить колличество на
+                  единицу</span></button>
               <input class="inp-price inp-first" type="text" value="2" id="adults" required>
-              <button class="plus" type="button">&#x0002B;</button>
+              <button class="plus" type="button">&#x0002B;<span class="hide">Увеличить колличество на
+                  единицу</span></button>
               <label for="children">Дети:</label>
-              <button class="minus bt-minus" type="button">&#x02013;</button>
+              <button class="minus bt-minus" type="button">&#x02013;<span class="hide">Уменьшить колличество на
+                  единицу</span></button>
               <input class="inp-price inp-second" type="text" value="0" id="children" required>
-              <button class="plus bt-plus" type="button">&#x0002B;</button>
+              <button class="plus bt-plus" type="button">&#x0002B;<span class="hide">Увеличить колличество на
+                  единицу</span></button>
             </div>
             <button class="button-search" type="submit">Найти</button>
           </form>
@@ -173,7 +179,7 @@
       </section>
       <section class="footer-social-button-grid">
         <a class="social-button" href="#">
-          <span class="hide">Twitter</span>
+          <span class="hide">ссылка на страницу Twitter</span>
           <svg aria-hidden="true" width="46" height="48" viewBox="0 0 46 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect width="46" height="48" fill="#81B3D2" />
@@ -183,7 +189,7 @@
           </svg>
         </a>
         <a class="social-button" href="#">
-          <span class="hide">Facebook</span>
+          <span class="hide">ссылка на страницу Facebook</span>
           <svg aria-hidden="true" width="46" height="48" viewBox="0 0 46 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect width="46" height="48" fill="#81B3D2" />
@@ -191,7 +197,7 @@
           </svg>
         </a>
         <a class="social-button" href="#">
-          <span class="hide">Youtube</span>
+          <span class="hide">ссылка на страницу Youtube</span>
           <svg aria-hidden="true" width="46" height="48" viewBox="0 0 46 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect width="46" height="48" fill="#81B3D2" />
@@ -203,7 +209,8 @@
       </section>
       <p class="footer-copyright">
         <span class="copyright-website">Website by</span>
-        <a class="copyright-button" href="https://up.htmlacademy.ru/profession/frontender/11/htmlcss">
+        <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="hide">ссылка на страницу курсов htmlacademy</span>
           <svg aria-hidden="true" width="115" height="33" viewBox="0 0 115 33" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="black" />
@@ -246,7 +253,7 @@
     </footer>
 
   </div>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

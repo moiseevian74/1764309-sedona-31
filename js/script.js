@@ -10,6 +10,8 @@ const btPlus = document.querySelector(".bt-plus");
 const btMinus = document.querySelector(".bt-minus");
 const second = document.querySelector(".inp-second");
 
+formShow.classList.remove("popup");
+
 searchSedona.addEventListener("click", function (evt) {
   formShow.classList.toggle("popup");
   arrival.focus();
