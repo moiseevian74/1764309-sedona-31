@@ -189,6 +189,7 @@ Hide-elements*/
 
 .description {
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr;
   grid-template-rows: min-content 1fr;
   min-height: 216px;
   text-align: center;
@@ -546,6 +547,7 @@ Hide-elements*/
 .button-search {
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
   width: 458px;
   height: 58px;
   padding: 0;
