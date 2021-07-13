@@ -21,6 +21,8 @@
   --basic-black: #000000;
   --basic-light-black: #333333;
   --basic-white-opacity: rgba(255, 255, 255, 0.9);
+  --basic-white-opacity-light: rgba(255, 255, 255, 0.3);
+  --basic-black-opaciti-box-shadow: rgba(0, 1, 1, 0.2);
   --basic-brown: #766357;
   --basic-grey-input: #F2F2F2;
   --basic-grey-plus-minus: #A9A9A9;
@@ -47,7 +49,7 @@
   margin: 0 auto;
   padding: 0;
   background-color: var(--basic-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px var(--basic-black-opaciti-box-shadow);
   min-height: 100%;
   display: grid;
   align-content: start;
@@ -410,7 +412,7 @@ Hide-elements*/
   font-weight: bold;
   text-align: left;
   background-color: var(--basic-white);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0px 7px 15px var(--basic-black-opaciti-box-shadow);
   box-sizing: border-box;
   justify-self: center;
   align-self: center;
@@ -541,7 +543,7 @@ Hide-elements*/
 
 .button:focus {
   background-color: var(--special-brown-pressing);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-opacity-light);
 }
 
 .button-search {
@@ -563,7 +565,7 @@ Hide-elements*/
 
 .button-search:focus {
   background-color: var(--special-blue-pressing);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-opacity-light);
 }
 
 /*Input*/
@@ -730,15 +732,6 @@ Hide-elements*/
   color: var(--special-blue-pressing);
 }
 
-.filter-checkbox:disabled+label::before {
-  border: 2px solid var(--basic-white);
-  opacity: 0.3;
-}
-
-.filter-checkbox:disabled+label::after {
-  opacity: 0.3;
-}
-
 .map-of-sedona {
   width: 1200px;
   height: 586px;
@@ -756,7 +749,7 @@ Hide-elements*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: var(--basic-black);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--basic-white-opacity);
   width: 1200px;
   min-height: 120px;
   margin: 0 auto;
@@ -843,7 +836,7 @@ Hide-elements*/
 }
 
 .social-button:focus path {
-  fill: rgba(255, 255, 255, 0.3);
+  fill: var(--basic-white-opacity-light);
 }
 
 /*--------------------------------Inner-page--------------------------------*/
@@ -954,6 +947,15 @@ Hide-elements*/
   outline: 2px solid var(--special-light-grey-focus);
 }
 
+.filter-checkbox:disabled+label::before {
+  border: 2px solid var(--special-dark-grey-chekbox-disabled);
+}
+
+.filter-checkbox:disabled+label::after {
+  background-image: url(../img/icon/checked.svg) none;
+  background-image: url(../img/galka.svg);
+}
+
 .fieldset-filter-block {
   position: relative;
 }
@@ -1025,7 +1027,7 @@ Hide-elements*/
 .range-controls .scale {
   padding: 0;
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--basic-white-opacity-light);
   width: 316px;
 }
 
@@ -1127,7 +1129,7 @@ Hide-elements*/
 }
 
 .inner-sorting-link {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-black-opaciti-box-shadow);
   -webkit-text-decoration: underline 1px dashed var(--basic-blue);
   text-decoration: underline 1px dashed var(--basic-blue);
 }
@@ -1259,7 +1261,7 @@ Hide-elements*/
 }
 
 .more-details:focus {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-opacity-light);
   background-color: var(--special-blue-pressing);
 }
 
@@ -1279,7 +1281,7 @@ Hide-elements*/
 }
 
 .to-book:focus {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-opacity-light);
   background-color: var(--special-brown-pressing);
 }
 
@@ -1307,7 +1309,7 @@ Hide-elements*/
 }
 
 .name-of-hotel:focus {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-black-opaciti-box-shadow);
 }
 
 .column-rating-hotel {
@@ -1365,7 +1367,7 @@ Hide-elements*/
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: var(--basic-white);
-  box-shadow: 0px 0px 14px 12px rgb(0 1 1 / 20%);
+  box-shadow: 0px 0px 14px 12px var(--basic-black-opaciti-box-shadow);
   cursor: pointer;
 }
 
@@ -1386,5 +1388,5 @@ Hide-elements*/
   transform: translate(-50%, -50%) scale(3.5) rotate(720deg);
   transition: 1s ease-out;
   transition-delay: 0.2s;
-  box-shadow: 0px 0px 12px 10px rgb(0 1 1 / 10%);
+  box-shadow: 0px 0px 12px 10px var(--basic-black-opaciti-box-shadow);
 }
